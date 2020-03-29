@@ -9,16 +9,24 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>br.usjt</groupId>
-	<artifactId>hellospringboot</artifactId>
+	<artifactId>app_previsoes</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>hellospringboot</name>
-	<description>Demo project for Spring Boot</description>
+	<name>app_previsoes</name>
+	<description>App de previsões do tempo</description>
 
-		<properties>
+	<properties>
 		<java.version>1.8</java.version>
 	</properties>
 
 	<dependencies>
+		<dependency> 
+			<groupId>org.webjars</groupId> 
+			<artifactId>webjars-locator</artifactId> <version>0.36</version>
+		</dependency> 
+		<dependency>
+			<groupId>org.webjars</groupId> 
+			<artifactId>bootstrap</artifactId> <version>3.3.7</version>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
