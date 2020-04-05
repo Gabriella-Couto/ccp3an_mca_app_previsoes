@@ -1,6 +1,5 @@
 package br.usjt.app_previsoes;
 
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
@@ -15,6 +14,6 @@ public class AppConfig implements WebMvcConfigurer {
 		registry.addInterceptor(
 				new LoginInterceptor()).
 		addPathPatterns("/**").
-		excludePathPatterns("/login", "/", "/fazerLogin");
+		excludePathPatterns("/login", "/", "/fazerLogin", "/webjars/**", "/bootstrap/**");
 	}
 }
